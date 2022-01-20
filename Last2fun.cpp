@@ -77,11 +77,17 @@ void itc_pos_neg_analysis_lst(const vector <int> &lst)
     cout<<itc_sumlst(lst1)<<',';
     cout<<endl;
     cout<<"Среднее значение: ";
-    double sr=itc_sumlst(lst2)/lst2.size();
+    double sr;
+    if(lst2.size()!=0){
+        sr=itc_sumlst(lst2)/lst2.size();
+    }else{sr=0}
     cout<<sr;
     cout<<"        ";
     cout<<"Среднее значение: ";
-    double sr1=itc_sumlst(lst1)/lst1.size();
+    double sr;
+    if(lst2.size()!=0){
+        sr=itc_sumlst(lst2)/lst2.size();
+    }else{sr=0}
     cout<<sr1;
     cout<<endl;
     cout<<"Количество нулей: ";

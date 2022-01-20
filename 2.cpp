@@ -10,7 +10,7 @@ long itc_sumlst(const vector <int> &lst)
     }
     return ot;
 }
-long itc_sum_even_part_lst(const vector <int> &lst)
+long itc_sum_even_lst(const vector <int> &lst)
 {
     long ot=0;
     if(lst.size()==0)
