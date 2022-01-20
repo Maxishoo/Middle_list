@@ -17,6 +17,18 @@ long itc_sum_even_lst(const vector <int> &lst)
         return 0;
     for(int i=0;i<lst.size();i++)
     {
+        if(i%2==0)
+            ot=ot+lst[i];
+    }
+    return ot;
+}
+long itc_sum_even_part_lst(const vector <int> &lst)
+{
+    long ot=0;
+    if(lst.size()==0)
+        return 0;
+    for(int i=0;i<lst.size();i++)
+    {
         if(lst[i]%2==0)
             ot=ot+lst[i];
     }
