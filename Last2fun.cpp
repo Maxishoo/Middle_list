@@ -11,6 +11,7 @@ long minchar(const vector <int> &lst)
 }
 void itc_odd_even_analysis_lst(const vector <int> &lst)
 {
+    setlocale (LC_ALL, "Russian");
     vector <int> lst1;
     vector <int> lst2;
     cout<<"Анализ списка:";
@@ -44,6 +45,7 @@ void itc_odd_even_analysis_lst(const vector <int> &lst)
 }
 void itc_pos_neg_analysis_lst(const vector <int> &lst)
 {
+    setlocale (LC_ALL, "Russian");
     vector <int> lst1;
     vector <int> lst2;
     vector <int> lst3;
@@ -80,14 +82,20 @@ void itc_pos_neg_analysis_lst(const vector <int> &lst)
     double sr;
     if(lst2.size()!=0){
         sr=itc_sumlst(lst2)/lst2.size();
-    }else{sr=0}
+    }else
+    {
+        sr=0;
+    }
     cout<<sr;
     cout<<"        ";
     cout<<"Среднее значение: ";
-    double sr;
-    if(lst2.size()!=0){
-        sr=itc_sumlst(lst2)/lst2.size();
-    }else{sr=0}
+    double sr1;
+    if(lst1.size()!=0){
+        sr1=itc_sumlst(lst1)/lst1.size();
+    }else
+    {
+        sr1=0;
+    }
     cout<<sr1;
     cout<<endl;
     cout<<"Количество нулей: ";
